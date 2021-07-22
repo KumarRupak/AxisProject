@@ -1,0 +1,28 @@
+
+<html>
+    <head>
+    <title>User LogIN</title>
+    <link  rel="stylesheet" type="text/css" href="css\userlogin.css">
+    <meta name="viewport" content="width=device-width" initial-sacle=1>
+    </head>
+    <body>
+    <div class="loginbox">
+    <img src="images\log.png" class="av">
+    <h1>Login Here</h1>
+    <form  onsubmit="return validate();" action="admin.html">
+    <p>Username</p>
+    <input id="user" type="text"  placeholder="Enter User ID" required>
+    <p>Password</p>
+    <input id="passwd" type="password"  placeholder="Enter Password" required>
+    <br>
+    <input type="submit" value="login">
+    <br>
+    <a href="#">Lost Your Password</a>
+    <br>
+    <a href="ApplyForm.html">Don't have an account?</a>
+    </form>
+    </div>
+
+    <script type="text/javascript" src="js\login.js">  </script>
+    </body>
+</html>
