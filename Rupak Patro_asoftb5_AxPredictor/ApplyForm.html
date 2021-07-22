@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Apply Loan</title>
+        <link rel="stylesheet" type="text/css" href="css\boot\bootstrap.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
+    </head>
+    <body style="background: linear-gradient(110deg, #AADEFA 60%, #4ECEEE 60%);">
+     <form action="#">  
+            <div class=" row content text-center">
+                    <div class="col bg-secondary text-white">APPLICATION FORM</div>
+                </div>
+        
+        <div class="container" style="margin-top:5%;">
+                
+
+            <div class="row">
+
+                <div class="col-md-4">
+                        <label for="Firstname">First Name</label>
+                        <input id="fname" type="text" class="form-control" placeholder="First Name" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="Lastname">Last Name</label>
+                        <input id="lname" type="text" class="form-control" placeholder="Last Name" required>
+                    </div>
+
+                    <div class="col-md-4">
+                            <label for="email">Email</label>
+                            <input id="email" type="email" class="form-control" placeholder="Email" required>
+                     </div>
+
+                     <div class="col-md-4">
+                            <label for="number">Phone</label>
+                            <input id="phone" type="number" class="form-control" placeholder="Phone Number" required>
+                     </div>
+                     
+                     <div class="col-md-4" >
+                            <label for="gender">Gender</label>
+                            <div>
+                                    <div class="dropdown">
+                                        <select class="btn btn-info dropdown-toggle" type="button" required> 
+                                        <div class="dropdown-menu dropdown-menu-right">
+                                            <option selected="selected"  href="#">Please Choose The Gender -----------------</option>
+                                            <option  href="#">Male</option>
+                                            <option  href="#">Female</option>
+                                            <option  href="#">Others</option>
+                                        </div>
+                                    </select>
+                                </div>
+                            </div>
+                     </div>
+
+
+
+                     <div class="col-md-4" >
+                            <label for="number">Profession</label>
+                            <div>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                                Please Choose Your Profession --------------
+                                            </button>
+                                        <div class="dropdown-menu">
+                                    
+                                            <option class="dropdown-header">Employed</option>
+                                            <div class="dropdown-divider"></div>
+                                            <option class="dropdown-item" value="">Public Sector</option>
+                                            <option class="dropdown-item" value="">Private Sector</option>
+                                            <div class="dropdown-divider"></div>
+                                            <div class="dropdown-header">Unemployed</div>
+                                            <div class="dropdown-divider"></div>
+                                            <option class="dropdown-item"  value="">Student</option>
+                                            <option class="dropdown-item"  value="">Business</option>
+                                            <option class="dropdown-item"  value="">Farmer</option>
+                                        
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                     </div>
+
+                     
+                     <div class="col-md-4">
+                            <label for="income">Yearly Income</label>
+                            <input id="income" type="number" class="form-control" placeholder="Enter In LPA." required>
+                     </div>
+
+                     <div class="col-md-4">
+                            <label for="age">Age</label>
+                            <input id="age" type="number" class="form-control" placeholder="Age" required>
+                     </div>
+
+                     <div class="col-md-4">
+                            <label for="pin" >Zip</label>
+                            <input id="pin" type="number" class="form-control bg-info text-white" placeholder="Zip Code" required>
+                     </div>
+
+                     
+                     <div style="margin-top:8%;"class="dropright col-md-12 text-center">
+                         
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                Apply Form
+                            </button>
+                            <div class="dropdown-menu">
+                                <input value="Credit Card" type="submit" class="dropdown-item" onclick="popup();"></input>
+                                <input value="Loan" type="submit" class="dropdown-item "  onclick="popup()";></input>
+                            </div>
+                        </div>
+                   
+
+                </div>
+            </div>
+        </div>
+
+      
+    
+        </form> 
+                
+        <script src="jss\bootstrap.min.js"></script>
+        <script src="jQuery\jquery.min.js"></script>
+        <script src="js\sweetalert.min.js"></script>
+        <script>
+function popup()
+{
+  if(!document.getElementById("fname").value==""&&
+    !document.getElementById("lname").value==""&&
+    !document.getElementById("email").value==""&&
+    !document.getElementById("phone").value==""&&
+    !document.getElementById("income").value==""&&
+    !document.getElementById("age").value==""&&
+    !document.getElementById("pin").value=="")
+    swal("Thanks For Taking Interst With oceanX!", "We will Get Back To You Soon !", "success");
+}
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+header{
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    height: 20vh;
+    background-color: #ECF008;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(#37F31E 20%,#FCFCFC 20%);
+  
+}
+.logo{
+    width: 20%;
+    color: #0416B8;
+    background-image: linear-gradient(#8d98e3 40%,#29D5DB 60%);
+    padding-left: 100px;
+}
+.logo h1{
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px white;
+    animation: aagepiche 2s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes aagepiche{
+    from{padding-left: 50px;}
+    to{padding-right: 50px;}
+}
+.menu{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu a{
+    text-decoration: none;
+    color:green;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+.menu a:before{
+    content: "";
+    position: absolute;
+    left: 0;top: 100%; width: 0%;height: 3px;
+    background-color: #000;
+    transition: all 0.5s linear;
+}
+.menu a:hover::before{
+    width: 100%;
+
+}
+main{
+    padding-top: 120px;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    background-image: linear-gradient(#8d98e3 40%,#0C4F6E 60%);
+}
+
+.rightside img{
+border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+background: #8d98e3;
+width: 80%;
+
+
+}
+.leftside{
+    color:black;
+    text-transform: uppercase;
+    margin-left: 50px;
+    
+}
+.leftside h3{
+    font-size: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.leftside h3:after{
+    content:"";
+    width: 170px;
+    height: 3px;
+    position: absolute;
+    top: 45%;
+    left: 47%;
+    background-color: black;
+}
+.leftside h1{
+    margin-top: 20px;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+.leftside h2{
+  
+    font-weight: 500;
+    margin-bottom: 35px;
+    word-spacing: 5px;
+}
+.leftside .btn1{
+    text-decoration: none;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+
+}
+
+ a:hover{
+    color: black;
+}
+
+.leftside .btn2{
+  
+    margin-left: 10px;
+    text-decoration: none;
+    width: 115px;
+    height: 25px;
+    background: #4E9CAF;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    line-height: 25px;
+
+}
+
+
+footer{
+    text-align: center;
+    margin-top:2px;
+    padding-top:6px;
+    height: 20px;
+    background-color: #067A5D;
+}
